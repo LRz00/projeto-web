@@ -1,0 +1,114 @@
+/*Defining global variables(Color palette and fonts */
+:root{
+    --teaGrean: #c9e4ca;
+    --cambridgeBlue: #87bba2;
+    --blueMunselII: #55828b;
+    --darkSlategray: #3b6064;
+    --charcoal: #364958;
+    --blackBean:#2b0504;
+    --silver: #c6c5b9;
+}
+
+/*NAVBAR:*/
+#menu {
+    position: fixed;
+    top: 0; 
+    left: 0; 
+    width: 100%; 
+    z-index: 1000; 
+    background: rgb(43,5,4);
+    background: rgb(43,5,4);
+    background: linear-gradient(90deg, rgba(43,5,4,1) 0%, rgba(71,14,12,1) 39%, rgba(43,5,4,1) 100%); 
+    padding: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: "Oswald";
+    font-optical-sizing: auto;
+    font-weight: 200;
+    font-style: normal;
+}
+.title-wrapper{
+    display: flex;
+    align-items: center;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    display: inline;
+    margin: 20px;
+    padding: 35px;
+    border-radius: 8px;
+    transition: background-color 0.4s ease-in-out;
+    font-weight: 700;
+}
+
+li:hover{
+    background-color: black;
+    opacity: 70%;
+}
+#menu a{
+    text-decoration: none;
+    color:aliceblue;
+    padding: 10px;
+    margin: 10px;
+}
+
+
+#page-title{
+    color:var(--silver);    
+    margin: 10px;
+    font-weight: 800;
+    font-size: 45px;
+}
+
+.icon{
+    width: 30px;
+    margin: 5px;
+}
+/*384px (Galaxys20)*/
+@media screen and (max-width: 384px) {
+    #menu {
+        flex-direction:column;
+        align-items: flex-start;
+        padding: 10px; 
+    }
+    .title-wrapper{
+        align-items: center;
+    }
+
+    li {
+        margin: 5px; 
+        padding: 4px 8px;
+    }
+    
+    li:focus{
+        background-color: black;
+    }
+
+    #page-title {
+        margin: 3px; 
+        font-size: 25px;
+    }
+
+    .icon {
+        width: 18px; 
+        margin: 2px; 
+    }
+}
+
+@media screen and (min-width: 321px) and (max-width: 810px) {
+    li {
+        display: inline-block; /* Change display back to inline-block */
+    }
+}
+
+body{
+    background-color: var(--blueMunselII);
+    margin: 0;
+}
