@@ -71,6 +71,42 @@ li:hover{
     width: 30px;
     margin: 5px;
 }
+
+
+/*BIO SPACE:*/
+.bio {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    background-color: var(--cambridgeBlue);
+    padding: 20px;
+    margin: 50px;
+    border-radius: 25px;
+}
+
+.bio-info {
+    flex: 1;
+    text-align: center;
+}
+
+.image {
+    flex: 1;
+    margin-left: 20px; /* Adjust margin as needed */
+}
+
+.image img {
+    max-width: 100%;
+}
+
+.image p {
+    text-align: center;
+    font-size: smaller;
+    max-width: 400px;
+    font-family: cursive;
+    color: var(--blackBean);
+}
+
+
 /*384px (Galaxys20)*/
 @media screen and (max-width: 384px) {
     #menu {
@@ -111,4 +147,8 @@ li:hover{
 body{
     background-color: var(--blueMunselII);
     margin: 0;
+    padding-top: 100px;
+    background-image: url(imagens/blood-splatter-background-d1l47m9a8v64vxin.webp);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
