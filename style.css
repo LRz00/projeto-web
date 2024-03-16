@@ -2,6 +2,7 @@
 :root {
     --purple: #10002b;
     --silver: #c6c5b9;
+    --mustard: #dba81a;
 }
 
 /*NAVBAR:*/
@@ -50,6 +51,7 @@ li {
     margin: 10px;
     width: 15px;
 }
+
 #menu a:hover{
     color: var(--purple);
     background-color: var(--silver);
@@ -104,6 +106,38 @@ li {
     color: var(--silver);
 }
 
+/*FILMS SECTION*/
+
+.film-title{
+    font-family: "Oswald";
+    color: var(--silver);
+    padding: 10px;
+    font-size: 25px;
+}
+
+.film-desc{
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--mustard);
+    max-width: 400px;
+    padding: 10px;
+    min-height: 50px;
+    
+}
+
+.films {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+    align-items: start;
+}
+
+.film-iten {
+    border: 1px solid #ccc;
+    padding: 110px;
+    text-align: center;
+    max-height: 900px;
+    margin: 5px;
+}
 
 /*384px (Galaxys20)*/
 @media screen and (max-width: 384px) {
