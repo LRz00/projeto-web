@@ -54,7 +54,7 @@ li {
 
 #menu a:hover{
     color: var(--purple);
-    background-color: var(--silver);
+    background-color: var(--mustard);
 }
 
 
@@ -108,6 +108,24 @@ li {
 
 /*FILMS SECTION*/
 
+#section-title{
+    font-family: "Oswald";
+    color: var(--mustard);
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style:normal;
+}
+
+#title-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+}
+
 .film-title{
     font-family: "Oswald";
     color: var(--silver);
@@ -128,16 +146,34 @@ li {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
     grid-gap: 20px;
-    align-items: start;
+    align-items: center;
+}
+
+.films a img{
+    height:32px;
+    width: 32pxpx;
 }
 
 .film-iten {
+    display: flex;
+    flex-direction:column;
     border: 1px solid #ccc;
-    padding: 110px;
+    padding: 20px;
+    height: 870px;
+    align-items: center;
     text-align: center;
-    max-height: 900px;
-    margin: 5px;
 }
+
+footer{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: end;
+    color: var(--mustard);
+    text-decoration: none;
+    font-size: 10px;
+}
+
+
 
 /*384px (Galaxys20)*/
 @media screen and (max-width: 384px) {
