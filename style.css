@@ -175,47 +175,90 @@ footer{
 
 
 
-/*384px (Galaxys20)*/
-@media screen and (max-width: 384px) {
-    #menu {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-
-    .title-wrapper {
-        align-items: center;
-    }
-
-    li {
-        margin: 5px;
-        padding: 4px 8px;
-    }
-
-    li:focus {
-        background-color: black;
-    }
-
-    #page-title {
-        margin: 3px;
-        font-size: 25px;
-    }
-
-    .icon {
-        width: 18px;
-        margin: 2px;
-    }
-}
-
-@media screen and (min-width: 321px) and (max-width: 810px) {
-    li {
-        display: inline-block;
-        /* Change display back to inline-block */
-    }
-}
-
 body {
     background-color: #10002B;
     margin: 0;
     padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+    #menu {
+        padding: 15px;
+    }
+    .title-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+    #page-title {
+        font-size: 30px;
+        margin-top: 10px;
+    }
+    
+    li {
+        margin: 10px;
+    }
+    .film-iten {
+        height: auto;
+    }
+}
+
+@media (max-width: 576px) {
+    #menu {
+        padding: 10px;
+    }
+    #page-title {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    li {
+        margin: 5px;
+        padding: 10px;
+    }
+    .film-desc {
+        font-size: smaller;
+    }
+    .film-iten {
+        padding: 10px;
+        height: auto;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (max-width: 576px) {
+    /* Navbar adjustments */
+    #menu {
+        padding: 10px;
+    }
+    #page-title {
+        font-size: 25px;
+        margin-top: 5px;
+    }
+    li {
+        margin: 5px;
+        padding: 10px;
+    }
+    .film-desc {
+        font-size: smaller;
+    }
+    .film-iten {
+        padding: 10px;
+        height: auto;
+    }
+    footer {
+        flex-direction: column;
+        align-items: center;
+    }
+    /* Adjustments for the films grid */
+    .films {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    }
+    .film-iten {
+        height: auto;
+    }
+    .film-title {
+        font-size: 20px;
+    }
 }
