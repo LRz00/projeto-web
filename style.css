@@ -72,6 +72,11 @@ li {
 
 
 /*BIO SPACE:*/
+
+p{
+    font-family: "Carrois Gothic SC", sans-serif;
+}
+
 .bio {
     display: flex;
     flex-direction: row-reverse;
@@ -84,7 +89,7 @@ li {
 .bio-info {
     flex: 1;
     text-align: center;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font: 100vw;   
     color: var(--silver);
 }
 
@@ -102,7 +107,6 @@ li {
     text-align: center;
     font-size: smaller;
     max-width: 400px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--silver);
 }
 
@@ -131,15 +135,15 @@ li {
     color: var(--silver);
     padding: 10px;
     font-size: 25px;
+
 }
 
 .film-desc{
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--mustard);
     max-width: 400px;
     padding: 10px;
     min-height: 50px;
-    
+    margin: 5px;
 }
 
 .films {
@@ -181,6 +185,13 @@ body {
     padding-top: 100px;
 }
 
+@media (max-width: 860px) {
+
+    li{
+        display: block;
+    }
+}
+
 @media (max-width: 768px) {
     #menu {
         padding: 15px;
@@ -195,40 +206,27 @@ body {
     }
     
     li {
+        display: block;
         margin: 10px;
     }
     .film-iten {
         height: auto;
+        margin: 5px;
+    }
+
+    .film-iten img{
+        height: 400px;
     }
 }
 
-@media (max-width: 576px) {
-    #menu {
-        padding: 10px;
-    }
-    #page-title {
-        font-size: 25px;
-        margin-top: 5px;
-    }
-    li {
-        margin: 5px;
-        padding: 10px;
-    }
-    .film-desc {
-        font-size: smaller;
-    }
-    .film-iten {
-        padding: 10px;
-        height: auto;
-    }
-    footer {
-        flex-direction: column;
-        align-items: center;
-    }
-}
+
 
 @media (max-width: 576px) {
     /* Navbar adjustments */
+
+    .bio{
+        display: block;
+    }
     #menu {
         padding: 10px;
     }
@@ -236,27 +234,34 @@ body {
         font-size: 25px;
         margin-top: 5px;
     }
+
     li {
+        display: block;
         margin: 5px;
         padding: 10px;
     }
+
     .film-desc {
         font-size: smaller;
     }
+
     .film-iten {
         padding: 10px;
         height: auto;
+        margin: 5px;;
     }
+
+    .film-iten img{
+        height: 400px;
+    }
+
     footer {
         flex-direction: column;
         align-items: center;
     }
-    /* Adjustments for the films grid */
+
     .films {
         grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    }
-    .film-iten {
-        height: auto;
     }
     .film-title {
         font-size: 20px;
