@@ -23,6 +23,9 @@
     font-style: normal;
 }
 
+span{
+    color: var(--mustard);
+}
 .title-wrapper {
     display: flex;
     align-items: center;
@@ -39,7 +42,7 @@ li {
     margin: 20px;
     padding: 35px;
     border-radius: 8px;
-    transition: background-color 0.4s ease-in-out;
+    transition: text-decoration 0.4s ease;
     font-weight: 700;
 }
 
@@ -53,8 +56,8 @@ li {
 }
 
 #menu a:hover{
-    color: var(--purple);
-    background-color: var(--mustard);
+    color: var(--mustard);
+    text-decoration: underline ;
 }
 
 
@@ -157,6 +160,7 @@ p{
     height:32px;
     width: 32pxpx;
 }
+
 
 .film-iten {
     display: flex;
